@@ -1,0 +1,18 @@
+{
+  "name": "pathfinding-playground",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "An original interactive exhibit of shortest-path algorithms.",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc --noEmit && vite build",
+    "typecheck": "tsc --noEmit",
+    "test": "node --experimental-strip-types --test tests/*.test.ts",
+    "preview": "vite preview --host 127.0.0.1"
+  },
+  "devDependencies": {
+    "typescript": "~5.9.3",
+    "vite": "^7.3.1"
+  }
+}
