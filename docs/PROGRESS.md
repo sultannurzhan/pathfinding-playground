@@ -2,7 +2,7 @@
 
 ## Decisions
 - Original static exhibit. Vanilla TypeScript, Vite, no runtime dependencies or remote assets.
-- Warm paper/ink/mint/amber, system Georgia and sans-serif typography; all maps and icons original.
+- Minimal monochrome design, system Georgia and sans-serif typography; all maps and icons original. Distinct grayscale fills, dotted frontiers, and white route markers preserve the search-state meanings.
 - Four-neighbor movement, destination-cell cost, terrain costs 1 / 3 / 5. The start costs zero.
 - Fixed neighbor order (up, right, down, left), stable insertion-order priority ties.
 - Pure algorithm event traces; independently applied comparison states and a single cancellable playback clock.

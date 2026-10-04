@@ -17,7 +17,7 @@ Performed in the supported Codex in-app Chromium browser against the running app
 - Play/pause holds the expanded count; Step advances one expansion; reset clears traces without changing terrain. Editing during playback cancels traces and no stale marks return.
 - Continuous pointer drawing paints intervening cells and groups the stroke into one undo. Erase, terrain painting, endpoint movement, arrow-key navigation, Space painting, undo and redo work.
 - Start = goal gives one expanded cell, zero steps and zero cost. Unreachable target gives a clear no-route message and no invented route metrics.
-- The weighted shortcut comparison reports BFS 18 steps / cost 70, Dijkstra 24 / 24, A* 24 / 24. Weighted route cells remain amber and retain their cost numeral.
+- The weighted shortcut comparison reports BFS 18 steps / cost 70, Dijkstra 24 / 24, A* 24 / 24. Weighted route cells remain visually distinct and retain their cost numeral.
 - Editing one comparison board updates all three copies and resets all traces. Step then advances each unfinished board independently.
 - Named local save/load restores terrain, and the save persists through page reload. The disposable QA save was removed afterward.
 - Shared URL preserves 65 weighted cells and both endpoints through opening, reload, and search reset. A malformed fragment displays an error safely. The visible share field provides a copyable URL; clipboard integration is browser-dependent.
@@ -27,6 +27,15 @@ Performed in the supported Codex in-app Chromium browser against the running app
 - No browser console warnings or errors in the final interaction pass.
 
 Independent design review inspected the final desktop and mobile screenshots and found no blocking visual issues.
+
+## Monochrome design revision — 2026-10-05
+
+- Replaced the complete color system with neutral black, white, and gray, including controls, search states, focus, scrollbars, brand mark, favicon, and browser theme color. No algorithm or application-state code changed.
+- Static inspection found no chromatic hex colors in the stylesheet, HTML theme color, or favicon. Terrain numerals and patterns, dotted frontier outlines, explored dots, and white route markers preserve state distinctions.
+- The weighted comparison remains 70 / 24 / 24 in the browser. Route text and markers are white on charcoal (`#484848`), including weighted cells.
+- Keyboard focus on a frontier cell keeps its solid black outline and white inset ring; it is no longer overridden by the dotted frontier outline.
+- Browser checks passed at 1440px, 390px, and 320px without page-wide horizontal overflow. Narrow-screen pan controls work, reduced-motion mode removes transitions, and no console warnings/errors were observed.
+- Strict TypeScript, all 16 existing tests, and production build passed. Desktop and mobile screenshots were refreshed, and independent visual review found no blocking issues. The physical-device and browser coverage limits below still apply.
 
 ### Limits of verification
 

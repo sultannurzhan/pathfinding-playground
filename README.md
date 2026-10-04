@@ -2,7 +2,7 @@
 
 **Draw a landscape. Choose a search. Watch a route emerge.**
 
-An original interactive field guide to breadth-first search, Dijkstra, and A*. Warm paper, green ink, a mint frontier, and an amber route make the computation visible. A static TypeScript app with no runtime dependencies, accounts, backend, analytics, remote fonts, or paid services.
+An original interactive field guide to breadth-first search, Dijkstra, and A*. A minimal black-and-white design makes the computation visible through distinct tones, dotted frontiers, terrain numerals, and white route markers. A static TypeScript app with no runtime dependencies, accounts, backend, analytics, remote fonts, or paid services.
 
 [Open the playground](https://sultannurzhan.github.io/pathfinding-playground/) · [Source repository](https://github.com/sultannurzhan/pathfinding-playground)
 
