@@ -36,4 +36,6 @@ Responsive widths and pointer/keyboard interactions were checked in Chromium. Th
 
 The personal GitHub owner was verified as `sultannurzhan`. Only this application subfolder is tracked. The publication review found no credentials, private project files, personal machine paths, or private contact metadata in the tracked candidates. Commit identity uses the verified public username and GitHub noreply address.
 
-GitHub Pages is configured for this new public repository. Deployment and public-URL checks are pending the initial push; this paragraph will be updated after verification.
+GitHub Pages deployed successfully on 2026-10-05 (Asia/Seoul). [The initial build and deployment](https://github.com/sultannurzhan/pathfinding-playground/actions/runs/37235236730) passed installation, strict TypeScript, all 16 tests, production build, and static deployment for application commit `a1c0c29`.
+
+The actual public URL, https://sultannurzhan.github.io/pathfinding-playground/, was opened in a fresh browser tab. The deployed app passed play/pause/step/reset, wall editing, preset loading, and three-way weighted comparison, with the same 70 / 24 / 24 route costs. The deployed script loaded from the correct repository subpath. A newly generated public share link loaded all 65 weighted cells and retained them after reload. No console warnings or errors were observed. HTTPS is enforced. No paid hosting, backend, or account creation was used.
